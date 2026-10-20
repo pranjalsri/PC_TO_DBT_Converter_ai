@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: legacy
+    schema: "{{ var('legacy_source_schema') }}"
+    tables:
+      - name: "PRODUCTS10"
+        identifier: "PRODUCTS10"
+        columns:
+          - name: "PID"
+            description: "PowerCenter type: number"
+          - name: "PNAME"
+            description: "PowerCenter type: varchar2"
+          - name: "PQUAN"
+            description: "PowerCenter type: number"

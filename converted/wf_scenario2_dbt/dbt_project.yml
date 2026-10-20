@@ -1,0 +1,14 @@
+name: 'wf_scenario2_dbt'
+version: '1.0.0'
+config-version: 2
+profile: 'powercenter_migration'
+model-paths: ['models']
+target-path: 'target'
+clean-targets:
+  - 'target'
+  - 'dbt_packages'
+vars:
+  legacy_source_schema: 'REPLACE_WITH_SOURCE_SCHEMA'
+models:
+  wf_scenario2_dbt:
+    +materialized: table

@@ -1,0 +1,6 @@
+langgraph
+langchain-community
+pandas
+openpyxl
+dbt-snowflake
+streamlit
